@@ -6,3 +6,7 @@ router.get('/test-me', function (req, res) {
 });
 
 module.exports = router;
+
+router.get("/assignment",function(req,res){
+    res.send("this is my 1st api")
+})
