@@ -5,10 +5,11 @@ function printDate(){
     
 } 
 
-// function printMonth(){
-//     const month =month.getMonth()
-//     return month;
-// }
+function printMonth(){
+  const d = new Date()
+    const month =d.getMonth()+1
+    return month;
+}
 
 function getBatchInfo(){
   console.log("Lithium, W3D5, the topic for today is Nodejs module system")
@@ -16,7 +17,7 @@ function getBatchInfo(){
 }
 
 module.exports.currentDate=printDate
-// module.exports.currentMonth=printMonth
+module.exports.currentMonth=printMonth
 module.exports.batch=getBatchInfo
 
 
