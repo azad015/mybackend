@@ -25,11 +25,13 @@ const arr2 = [1,3,5,7,9,11,13,15,17,19]
 const newArry = lodash.tail(arr2)
 console.log("tailFunction: ",newArry)
 
-const myArry = [[1,2,1,4,5],[1,2,3,4,5],[1,2,3,4,5],[1,2,3,4,5],[1,2,3,4,5]]
+const myArry = [1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5]
 const myArry2 = lodash.union(myArry)
 console.log("unionFunction: ",myArry2)
 
-const myArry3 = [{axenMovei:"Avengr"},]
+const myArry3 = [["ActionMovie","Avengers"],["horror","haunted"],["comedy","hungama2"]]
+const myArr4 = lodash.fromPairs(myArry3)
+console.log(myArr4)
 
     res.send('My first ever api!')
 });
