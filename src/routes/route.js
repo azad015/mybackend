@@ -65,4 +65,31 @@ router.get("/films/:filmId", function(req,res){
      } res.send("No movie exists with this id")
 })
 
+
+ router.post("/myapi-post-1", function(req,res){
+      let id = req.body.name
+      let ps = req.body.ad
+      console.log(id,ps)
+    console.log(req.body)
+   res.send({cohart: "lithium", bootcamp: "functionUp"})
+ })
+
+   
+// Assignment 19 Oct.
+
+ router.get("/sol1", function (req, res){
+    let arr= [1,2,3,5,6,7]
+    let missNum= (arr.length+1)*(arr.length+2)%2
+   for (let i=0; i<arr.length; i++){
+        
+   }
+   
+    res.send()
+ })
+
+
+
+
+
+
 module.exports = router
